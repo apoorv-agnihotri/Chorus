@@ -1,0 +1,3 @@
+MLX / mlx-swift 0.31.2, copyright ml-explore, MIT.
+The precompiled Metal library in packaging/mlx-0.31.2.metallib.gz comes from the official mlx-metal 0.31.2 macOS arm64 wheel.
+See https://pypi.org/project/mlx-metal/0.31.2/ and LICENSE.

@@ -1,0 +1,56 @@
+{
+  "model": "mlx-community/Kokoro-82M-bf16",
+  "revision": "a71e4d38b236d968966a2002c4c895dbd12b1c3c",
+  "voices": [
+    {
+      "name": "rue",
+      "seedVoice": "af_bella",
+      "speed": 0.98,
+      "text": "I thought I knew how this story would end. Then you walked through that door, and everything changed. Don't tell me it was just a coincidence. Look at me. We still have a chance to make this right, but we have to choose it together. So, what do you say? Are you coming with me?",
+      "seconds": 15.95,
+      "sha256": "e141c120726570c7eaae9c64c37c052f7a2eea3e6c90ddbff960212ef71ba57b",
+      "conditioningFile": "rue-conds.safetensors",
+      "conditioningSHA256": "dd2433cd19a82d922de118afa5594e45da1c93f492b00b0dc8ef7ac641968a67"
+    },
+    {
+      "name": "kai",
+      "seedVoice": "am_fenrir",
+      "speed": 0.98,
+      "text": "You want the truth? I didn't come all this way to give up at the last door. We made a promise, and I intend to keep it. Maybe we're scared. Maybe the odds are terrible. But you and I have faced worse than this before. Take a breath, look ahead, and let's finish what we started.",
+      "seconds": 15.425,
+      "sha256": "ce962d65610856efb7e9f0ccdeefd6f1061a35491df87cc8c04138995d701081",
+      "conditioningFile": "kai-conds.safetensors",
+      "conditioningSHA256": "16e0927589144564e1b1e5d63fa235dac69e110c1d4689ada084e397f3f642ba"
+    },
+    {
+      "name": "atlas",
+      "seedVoice": "am_onyx",
+      "speed": 0.9,
+      "text": "Some journeys begin with a great adventure. Others begin with a quiet decision to try again. As the evening light moved across the empty street, he paused and listened. There was no hurry now. Every road had brought him here, and for the first time in years, he understood what mattered. The next chapter was still his to write.",
+      "seconds": 17.875,
+      "sha256": "da7622fa446dee70b81dcaccb5e70776e1edaa0fac49dca85bb2bb54ad1fb2f9",
+      "conditioningFile": "atlas-conds.safetensors",
+      "conditioningSHA256": "399caf84e635773a2fc33c17684d706e7048963bb9afe8c29bded369722713c3"
+    },
+    {
+      "name": "zia",
+      "seedVoice": "af_heart",
+      "speed": 1.06,
+      "text": "Ready for something fresh? Meet your new favorite way to start the day! Bright ideas, bold little moments, and a whole lot of possibility. Whether you're heading out with friends or chasing your next big thing, bring a little extra energy along. Go on, make it yours. Your next great day starts right here, right now!",
+      "seconds": 17.975,
+      "sha256": "bf0b55fc89d07c54f135102331e13b2977aff2ff9074b033ec3d2b2cbcd793ca",
+      "conditioningFile": "zia-conds.safetensors",
+      "conditioningSHA256": "8744da38c92e6d422f29e52c16e8c87703d8151a63ab0c4628fa76b780631f1d"
+    },
+    {
+      "name": "indie",
+      "seedVoice": "af_nicole",
+      "speed": 0.96,
+      "text": "Hey, take your time. The coffee's warm, the record's spinning, and there's nowhere we need to rush off to. I found this little track last night, and the bass line has been living in my head ever since. Put your phone down for a minute. Settle in, catch the groove, and let the afternoon do its thing.",
+      "seconds": 28.175,
+      "sha256": "8272285120859d4a9252bb72312bbfc8448c8f5ec274208291bf83a3362ee9cd",
+      "conditioningFile": "indie-conds.safetensors",
+      "conditioningSHA256": "fc8209a267b60a3e8041fcaa476a1994482176c46916dadf7eaf8d4a61eb87f6"
+    }
+  ]
+}

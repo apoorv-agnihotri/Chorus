@@ -1,0 +1,13 @@
+.build/
+dist/
+models/
+.DS_Store
+__pycache__/
+*.pyc
+*.wav
+*.log
+.env
+.env.*
+*.dSYM/
+packaging/*.metallib
+packaging/*.metallib.gz

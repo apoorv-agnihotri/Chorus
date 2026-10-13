@@ -1,0 +1,3 @@
+Native Pocket TTS and Mimi components adapted from Blaizzy/mlx-audio-swift, revision 244458d7b61e54ff135073ddc9ed76782bb20758, MIT. Source: https://github.com/Blaizzy/mlx-audio-swift. Only Pocket/Mimi/tokenization code is included. Imports and generation/loading facade are adapted to the narrow Chorus target; a local KV cache replaces the full language-model SDK. Generation drains evaluation between audio frames. Original license is in LICENSE-UPSTREAM.
+
+Chorus adapters implement cache reset and align causal masks to the actual cropped decoder key length. Per-frame evaluation bounds lazy computation graphs. The public conversion is pinned in PocketBackend.swift.

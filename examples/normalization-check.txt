@@ -1,0 +1,11 @@
+[kai]
+Meet Dr. Rue at 2:00 a.m.
+
+[rue]
+The score is 6.9. HELLO THERE!
+
+[atlas]
+The next appointment is at 3:45 p.m.
+
+[zia]
+[chuckle] It costs ₹1,500. AI makes TTS possible.
