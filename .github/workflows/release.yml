@@ -8,12 +8,12 @@ permissions:
 
 jobs:
   build:
-    runs-on: macos-15
+    runs-on: xcode-27
     timeout-minutes: 40
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Verify Apple Silicon runner
         run: test "$(uname -m)" = arm64
       - name: Run regression tests
