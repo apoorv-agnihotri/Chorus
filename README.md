@@ -16,7 +16,11 @@ Create conversations, turn text into speech, and build voices — on your Mac.
 
 ![Chorus Voice Studio with Rue and Kai, dialogue blocks, and an audio preview](docs/screenshots/voice-studio.png)
 
-**Hear Chorus in action:** [▶ Listen to the sample voice (WAV)](https://github.com/apoorv-agnihotri/Chorus/raw/refs/heads/main/docs/audio/chorus-speech.wav)
+**Hear Chorus in action**
+
+https://github.com/user-attachments/assets/d803adc9-3f67-4645-a929-bdac40d5e1f5
+
+[Download the original WAV](docs/audio/chorus-speech.wav)
 
 ## A conversation, one voice at a time
 
