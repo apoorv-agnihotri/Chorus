@@ -1,0 +1,39 @@
+name: Build macOS release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 40
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify Apple Silicon runner
+        run: test "$(uname -m)" = arm64
+      - name: Run regression tests
+        run: bash scripts/test.sh
+      - name: Build and verify app
+        run: bash scripts/build-app.sh
+      - name: Package app and checksum
+        run: |
+          VERSION=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' dist/Chorus.app/Contents/Info.plist)
+          ARCHIVE="Chorus-v${VERSION}-macOS-arm64.zip"
+          ditto -c -k --sequesterRsrc --keepParent dist/Chorus.app "dist/$ARCHIVE"
+          (cd dist && shasum -a 256 "$ARCHIVE" > "$ARCHIVE.sha256")
+          mkdir -p /tmp/chorus-verify
+          ditto -x -k "dist/$ARCHIVE" /tmp/chorus-verify
+          codesign --verify --deep --strict /tmp/chorus-verify/Chorus.app
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+          echo "ARCHIVE=$ARCHIVE" >> "$GITHUB_ENV"
+      - name: Attach verified files to draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view "v$VERSION" --json isDraft --jq '.isDraft' | grep -qx true
+          gh release upload "v$VERSION" "dist/$ARCHIVE" "dist/$ARCHIVE.sha256" --clobber
