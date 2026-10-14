@@ -99,7 +99,7 @@ tags. The workspace saves automatically.
 
 ## Build from source
 
-Requires Apple Silicon, Swift 6.2 or later, and Xcode 26 or a compatible Command Line
+Requires Apple Silicon, Swift 6.4 or later, and Xcode 27 or a compatible Command Line
 Tools installation with a macOS 26-or-newer SDK.
 
 ```sh

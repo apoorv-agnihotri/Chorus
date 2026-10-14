@@ -8,8 +8,8 @@ Turbo or Nano voices, local reference voices, and 24 kHz PCM WAV export. No acco
 
 ## Build and run
 
-Requires an Apple Silicon Mac, macOS 15+, and Swift 6.2+ with a macOS 26 SDK
-(Xcode 26 or recent Command Line Tools). The SDK is needed to compile Liquid
+Requires an Apple Silicon Mac, macOS 15+, and Swift 6.4+ with a macOS 27 SDK
+(Xcode 27 or recent Command Line Tools). The SDK is needed to compile Liquid
 Glass; the resulting app falls back to native material on macOS 15.
 
 ```sh
