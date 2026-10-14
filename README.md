@@ -18,9 +18,16 @@ Create conversations, turn text into speech, and build voices — on your Mac.
 
 **Hear Chorus in action**
 
-https://github.com/user-attachments/assets/d803adc9-3f67-4645-a929-bdac40d5e1f5
-
-[Download the original WAV](docs/audio/chorus-speech.wav)
+<table>
+  <tr>
+    <th>Conversation</th>
+    <th>SpongeBob-inspired</th>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/d803adc9-3f67-4645-a929-bdac40d5e1f5" controls width="420"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/dc8f9dbf-277c-477f-b5ae-786ee1b82a49" controls width="420"></video></td>
+  </tr>
+</table>
 
 ## A conversation, one voice at a time
 
